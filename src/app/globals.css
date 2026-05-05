@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Paleta Mesa & Afeto */
+  --color-terracota: #C1694F;
+  --color-terracota-dark: #A0522D;
+  --color-terracota-light: #D4856E;
+  --color-bege: #E8D5B7;
+  --color-bege-light: #F5ECD7;
+  --color-off-white: #FAF7F2;
+  --color-marrom: #3D2B1F;
+  --color-marrom-light: #6B4C3B;
+
+  /* Tipografia */
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-lato);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-off-white);
+  color: var(--color-marrom);
+  font-family: var(--font-sans), sans-serif;
 }
